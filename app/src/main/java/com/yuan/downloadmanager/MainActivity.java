@@ -45,7 +45,7 @@ public class MainActivity extends AppCompatActivity {
         return list;
 
     }
-    private List<MockEntity> getMockDat1a() {
+    private List<MockEntity> getMockData1() {
         List<MockEntity> list = new ArrayList<>();
 
         for(int i = 'a'; i<'o'; i++) {
