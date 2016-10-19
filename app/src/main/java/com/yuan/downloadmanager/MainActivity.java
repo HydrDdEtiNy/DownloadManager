@@ -45,4 +45,19 @@ public class MainActivity extends AppCompatActivity {
         return list;
 
     }
+    private List<MockEntity> getMockDat1a() {
+        List<MockEntity> list = new ArrayList<>();
+
+        for(int i = 'a'; i<'o'; i++) {
+            MockEntity entity = new MockEntity();
+            char c = (char) i;
+            String s = String.valueOf(c);
+            entity.setTitle(s.toUpperCase());
+            entity.setUrl("http://192.168.1.111:8888/test." + s + s + s);
+            list.add(entity);
+        }
+
+        return list;
+
+    }
 }
